@@ -67,6 +67,19 @@
             <img src="img/img_5.avif" alt="Photo" />
             <img src="img/img_6.avif" alt="Photo" />
           </div>
+
+          <script>
+      	$.ajax({
+            url: 'https://api-lolis.caliph.repl.co/loli',
+            global: true,
+            type: 'GET',
+            async: false,
+            success: function (response) {
+            	$(".photos").append(`<img src="${response.url}" alt="Photo" />`);
+            }
+        });
+      </script>
+
         </div>
       </div>
     </div>

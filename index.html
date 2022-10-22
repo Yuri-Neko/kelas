@@ -60,26 +60,13 @@
           </nav>
 
           <div class="photos">
-            <img src="img/img_1.avif" alt="Photo" />
+            <img src="https://apikey-ky.herokuapp.com/api/wallpaper/waifu?apikey=loli" alt="Photo" />
             <img src="img/img_2.avif" alt="Photo" />
             <img src="img/img_3.avif" alt="Photo" />
             <img src="img/img_4.avif" alt="Photo" />
             <img src="img/img_5.avif" alt="Photo" />
             <img src="img/img_6.avif" alt="Photo" />
           </div>
-
-          <script>
-      	$.ajax({
-            url: 'https://api-lolis.caliph.repl.co/loli',
-            global: true,
-            type: 'GET',
-            async: false,
-            success: function (response) {
-            	$(".photos").append(`<img src="${response.url}" alt="Photo" />`);
-            }
-        });
-      </script>
-
         </div>
       </div>
     </div>
